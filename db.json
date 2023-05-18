@@ -1,0 +1,25 @@
+{
+  "seller": [
+    {
+      "name": "quyen1",
+      "email": "quyen1@gmail.com",
+      "password": "123456",
+      "repPassword": "123456",
+      "id": 1
+    },
+    {
+      "name": "quyen2",
+      "email": "quyen2@gmail.com",
+      "password": "1234",
+      "repPassword": "1234",
+      "id": 2
+    },
+    {
+      "name": "quyen3",
+      "email": "quyen3@gmail.com",
+      "password": "123",
+      "repPassword": "123",
+      "id": 3
+    }
+  ]
+}
