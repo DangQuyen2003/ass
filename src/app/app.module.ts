@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './pages/seller-home/seller-home.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SigninComponent } from './pages/signin/signin.component';
+import { QuangComponent } from './quang/quang.component';
 
 
 
@@ -29,6 +30,7 @@ import { SigninComponent } from './pages/signin/signin.component';
     SellerHomeComponent,
       SignupComponent,
       SigninComponent,
+      QuangComponent,
 
 
   ],
