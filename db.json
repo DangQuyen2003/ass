@@ -20,6 +20,34 @@
       "password": "123",
       "repPassword": "123",
       "id": 3
+    },
+    {
+      "name": "Quang Hau",
+      "email": "quanghau457@gmail.com",
+      "password": "123456",
+      "repPassword": "123456",
+      "id": 4
+    },
+    {
+      "name": "Quang Hau",
+      "email": "quanghau457@gmail.com",
+      "password": "123456",
+      "repPassword": "123456",
+      "id": 5
+    },
+    {
+      "name": "quyen",
+      "email": "hau@gmail.com",
+      "password": "123456",
+      "repPassword": "123456",
+      "id": 6
+    },
+    {
+      "name": "cam",
+      "email": "hung@gmail.com",
+      "password": "123456789",
+      "repPassword": "123456789",
+      "id": 7
     }
   ]
 }

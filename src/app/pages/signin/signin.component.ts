@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SignIn, SignUp } from 'src/app/common/auth';
+import { SignIn } from 'src/app/common/auth';
 import { SellerService } from 'src/app/services/seller.service';
 
 @Component({
-  selector: 'app-seller-auth',
-  templateUrl: './seller-auth.component.html',
-  styleUrls: ['./seller-auth.component.scss']
+  selector: 'app-signin',
+  templateUrl: './signin.component.html',
+  styleUrls: ['./signin.component.scss']
 })
-export class SellerAuthComponent implements OnInit {
+export class SigninComponent implements OnInit{
+
   constructor(private seller: SellerService, private router: Router) { }
   showSignIn = false
   authError: string = ''
@@ -16,10 +17,6 @@ export class SellerAuthComponent implements OnInit {
 
   }
 
-  signUp(data: SignUp): void {
-    this.seller.userSignUp(data)
-    this.router.navigate([''])
-  }
 
 
 
@@ -39,7 +36,6 @@ export class SellerAuthComponent implements OnInit {
   }
 
   
-  openSignUp() {
-    this.showSignIn = false
-  }
+
+
 }

@@ -22,7 +22,7 @@ export class SellerService {
       // console.warn(result);
       if (result) {
         localStorage.setItem('seller', JSON.stringify(result));
-        this.router.navigate(['app-seller-home'])
+        this.router.navigate(['signin'])
       }
 
     })
