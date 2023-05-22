@@ -5,6 +5,7 @@ export interface SignUp{
   email: string;
   password: string;
   repPassword: string;
+  
 }
 
 export interface SignIn{
