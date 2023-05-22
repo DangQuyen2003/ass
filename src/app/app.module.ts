@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { SellerHomeComponent } from './pages/seller-home/seller-home.component';
-import { UserAuthComponent } from './pages/user-auth/user-auth.component';
+
 
 
 
@@ -25,7 +25,7 @@ import { UserAuthComponent } from './pages/user-auth/user-auth.component';
     SellerAuthComponent,
 
     SellerHomeComponent,
-     UserAuthComponent,
+
 
   ],
   imports: [
