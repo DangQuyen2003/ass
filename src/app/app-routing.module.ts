@@ -11,7 +11,9 @@ import { HomeAdminComponent } from './admin/components/home-admin/home-admin.com
 import { WatchComponent } from './pages/watch/watch.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { DetailComponent } from './detail/detail.component';
+
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { DetailComponent } from './pages/detail/detail.component';
 
 
 
@@ -48,6 +50,10 @@ const routes: Routes = [
       {
         path: 'detail/:id',
         component: DetailComponent
+      }, 
+      {
+        path: '**',
+        component: NotfoundComponent
       }
 
     ]
