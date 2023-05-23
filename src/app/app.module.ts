@@ -19,6 +19,7 @@ import { WatchComponent } from './pages/watch/watch.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailComponent } from './detail/detail.component';
+import { EditProductsComponent } from './admin/edit-products/edit-products.component';
 
 
 
@@ -45,6 +46,7 @@ import { DetailComponent } from './detail/detail.component';
     AboutComponent,
     ContactComponent,
     DetailComponent,
+    EditProductsComponent,
 
   ],
   imports: [
