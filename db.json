@@ -49,5 +49,42 @@
       "repPassword": "123456789",
       "id": 7
     }
+  ], "banners": [
+    {
+      "id": 1,
+      "link": "assets/images/slider-img.png"
+    },
+    {
+      "id": 2,
+      "link": "assets/images/slider-img.png"
+    },
+    {
+      "id": 3,
+      "link": "assets/images/slider-img.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Đồng hồ 1",
+      "price": 100,
+      "image": "assets/images/w4.png"
+    },
+    {
+      "id": 2,
+      "name": "Đồng hồ 2",
+      "price": 200,
+      "image": "assets/images/w5.png"
+    }
+  ],
+  "category": [
+    {
+      "name": "Đồng hồ nam",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Đồng hồ nữ"
+    }
   ]
 }
