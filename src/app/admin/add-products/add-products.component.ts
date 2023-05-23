@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl} from '@angular/forms';
+import {Route, Router} from '@angular/router'
 import { ProductService } from 'src/app/services/products.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ProductService } from 'src/app/services/products.service';
   styleUrls: ['./add-products.component.scss']
 })
 export class AddProductsComponent implements OnInit {
-  constructor(private prodSrv: ProductService ) { }
+  constructor(private prodSrv: ProductService, private router: Router ) { }
   productFormCreate: FormGroup = new FormGroup({
     name: new FormControl(),
     price: new FormControl(),
@@ -19,6 +20,7 @@ export class AddProductsComponent implements OnInit {
   onCreate(){
     this.prodSrv.Create(this.productFormCreate.value).subscribe(data => {
       console.log(data);
+      this.router.navigate(['admin'])
     })
     
   }

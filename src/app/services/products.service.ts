@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Products } from '../common/product';
+import { Router } from '@angular/router';
 
 const _api = 'http://localhost:3000/'
 
@@ -10,7 +11,7 @@ const _api = 'http://localhost:3000/'
 })
 export class ProductService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   getProducts(search_key:any =null,): Observable<Array<Products>> {
     let url = _api+ "products"
