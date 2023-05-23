@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuangComponent } from './quang.component';
+import { LayoutComponent } from './layout.component';
 
-describe('QuangComponent', () => {
-  let component: QuangComponent;
-  let fixture: ComponentFixture<QuangComponent>;
+describe('LayoutComponent', () => {
+  let component: LayoutComponent;
+  let fixture: ComponentFixture<LayoutComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [QuangComponent]
+      declarations: [LayoutComponent]
     });
-    fixture = TestBed.createComponent(QuangComponent);
+    fixture = TestBed.createComponent(LayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

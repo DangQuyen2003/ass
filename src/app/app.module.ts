@@ -13,7 +13,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './pages/seller-home/seller-home.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SigninComponent } from './pages/signin/signin.component';
-import { QuangComponent } from './quang/quang.component';
+import { LayoutComponent } from './layout/layout.component';
+import { LayoutAdminComponent } from './admin/layout-admin/layout-admin.component';
+import { HeaderAdminComponent } from './admin/components/header-admin/header-admin.component';
+import { FooterAdminComponent } from './admin/components/footer-admin/footer-admin.component';
+import { HomeAdminComponent } from './admin/components/home-admin/home-admin.component';
+
 
 
 
@@ -30,7 +35,12 @@ import { QuangComponent } from './quang/quang.component';
     SellerHomeComponent,
       SignupComponent,
       SigninComponent,
-      QuangComponent,
+      LayoutComponent,
+      LayoutAdminComponent,
+      HeaderAdminComponent,
+      FooterAdminComponent,
+      HomeAdminComponent,
+ 
 
 
   ],

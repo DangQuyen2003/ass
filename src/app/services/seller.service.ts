@@ -37,7 +37,7 @@ export class SellerService {
       if (result && result.body && result.body.length) {
         // console.warn("dung tk");
         localStorage.setItem('seller', JSON.stringify(result));
-        this.router.navigate(['app-seller-home'])
+        this.router.navigate(['/'])
       }else{
         // console.warn("sai tk");
         this.isSignInError.emit(true)
