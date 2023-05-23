@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { DetailComponent } from './pages/detail/detail.component';
+import { AddProductsComponent } from './admin/add-products/add-products.component';
 
 
 
@@ -63,6 +64,10 @@ const routes: Routes = [
       {
         path: "",
         component: HomeAdminComponent
+      }, 
+      {
+        path: "add",
+        component: AddProductsComponent
       }
     ]
   },

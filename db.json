@@ -49,7 +49,8 @@
       "repPassword": "123456789",
       "id": 7
     }
-  ], "banners": [
+  ],
+  "banners": [
     {
       "id": 1,
       "link": "assets/images/slider-img.png"
@@ -81,12 +82,6 @@
       "name": "Đồng hồ 3",
       "price": 500,
       "image": "assets/images/w2.png"
-    },
-    {
-      "id": 4,
-      "name": "Đồng hồ 4",
-      "price": 400,
-      "image": "assets/images/w3.png"
     }
   ],
   "category": [

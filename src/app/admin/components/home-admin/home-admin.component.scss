@@ -52,7 +52,7 @@ body {
 
 .app-container {
   border-radius: 4px;
-  width: 100%;
+  width: auto;
   height: 100%;
   max-height: 100%;
   max-width: 1280px;
@@ -452,6 +452,7 @@ body {
   
   .product-cell {
     flex: 1;
+    width: 200px;
     padding: 8px 16px;
     color: var(--app-content-main-color);
     font-size: $font-small;
@@ -459,8 +460,8 @@ body {
     align-items: center;
         
     img {
-      width: 32px;
-      height: 32px;
+      width: 50px;
+      height: 100px;
       border-radius: 6px;
       margin-right: 6px;
     }

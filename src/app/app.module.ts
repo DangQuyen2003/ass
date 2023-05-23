@@ -22,6 +22,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { EditProductsComponent } from './admin/edit-products/edit-products.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { DetailComponent } from './pages/detail/detail.component';
+import { AddProductsComponent } from './admin/add-products/add-products.component';
 
 
 
@@ -50,6 +51,7 @@ import { DetailComponent } from './pages/detail/detail.component';
     DetailComponent,
     EditProductsComponent,
     NotfoundComponent,
+    AddProductsComponent,
 
   ],
   imports: [
