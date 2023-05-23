@@ -19,18 +19,21 @@
             <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/watchs"> Watches </a>
+            <a class="nav-link" routerLink="watch"> Watches </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about"> About </a>
+            <a class="nav-link" routerLink="about"> About </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contact">Contact Us</a>
+            <a class="nav-link" routerLink="contact">Contact Us</a>
           </li>
         </ul>
         <div class="user_option-box">
           <a routerLink="signup">
             <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+          <a (click)="LogOut()">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
           </a>
           <a href="">
             <i class="fa fa-cart-plus" aria-hidden="true"></i>
