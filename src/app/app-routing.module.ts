@@ -51,10 +51,7 @@ const routes: Routes = [
         path: 'detail/:id',
         component: DetailComponent
       }, 
-      {
-        path: '**',
-        component: NotfoundComponent
-      }
+      
 
     ]
   },
@@ -68,6 +65,10 @@ const routes: Routes = [
         component: HomeAdminComponent
       }
     ]
+  },
+  {
+    path: '**',
+    component: NotfoundComponent
   }
 
 ];
