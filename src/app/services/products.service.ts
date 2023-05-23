@@ -15,10 +15,7 @@ export class ProductService {
   getProducts(search_key:any =null,search_price:any =null): Observable<Array<Products>> {
     let url = _api+ "products"
     if(search_key !=null){
-      url += "?name_like="+ search_key
-    }
-    if(search_price !=null){
-      url += "?price_like="+ search_price
+      url += "?name_like=" + "&price_like="+ search_key
     }
     return this.http.get<Array<Products>>( url);
   }
