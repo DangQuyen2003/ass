@@ -37,8 +37,8 @@ export class HomeAdminComponent {
 
   }
   onSearch(){
-    // alert(this.searchForm.value.name)
-    this.proSrv.getProducts(this.searchForm.value.name,this.searchForm.value.price).subscribe(data => {
+    // alert(this.searchForm.value.price)
+    this.proSrv.getProducts(this.searchForm.value.name).subscribe(data => {
       this.products = data;
     })
   }
