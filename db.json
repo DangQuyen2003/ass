@@ -82,6 +82,12 @@
       "name": "Đồng hồ 3",
       "price": 500,
       "image": "assets/images/w2.png"
+    },
+    {
+      "id": 4,
+      "name": "Đồng hồ 3",
+      "price": 500,
+      "image": "assets/images/w2.png"
     }
   ],
   "category": [

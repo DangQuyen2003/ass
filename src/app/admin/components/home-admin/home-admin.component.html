@@ -1,34 +1,35 @@
 <div class="app-content">
-  <div class="app-content-header">
-    <h1 class="app-content-headerText">Products</h1>
-  </div>
-  <div class="app-content-actions">
-    <input class="search-bar" placeholder="Search..." type="text">
-  </div>
-  <div class="products-area-wrapper tableView">
-    <div class="products-header">
-      <div class="product-cell image">
-        Image
-      </div>
-      <div class="product-cell category">Name</div>
-      <div class="product-cell price">Price</div>
-      <div class="product-cell stock">Active</div>
-      
+    <div class="app-content-header">
+        <h1 class="app-content-headerText">Products</h1>
     </div>
-    <div class="products-row" *ngFor="let product of products">
-      <button class="cell-more-button">
-      </button>
-      <div class="product-cell image">
-        <img
-          src="{{product.image}}" 
-          alt="product">
-      </div>
-      <div class="product-cell category"><span class="cell-label">Name:</span>{{product.name}}</div>
-      <div class="product-cell price"><span class="cell-label">Price:</span>${{product.price}}</div>
-      <div class="product-cell stock">
-        <button (click)="onDelete(product.id)" class="btn btn-warning mx-2"><i class="fa fa-trash" aria-hidden="true"></i></button>
-        <button class="btn btn-danger"><i class="fa fa-cog" aria-hidden="true"></i></button>
-      </div>
+    <form class="app-content-actions" [formGroup]="searchForm" (ngSubmit)="onSearch()">
+       
+        <input class="search-bar" formControlName="name"  formControlPrice="price"placeholder="Search to name" type="text">
+        <button type="submit" class="btn btn-success">Search</button>
+    </form>
+    <div class="products-area-wrapper tableView">
+        <div class="products-header">
+            <div class="product-cell image">
+                Image
+            </div>
+            <div class="product-cell category">Name</div>
+            <div class="product-cell price">Price</div>
+            <div class="product-cell stock">Active</div>
+
+        </div>
+        <div class="products-row" *ngFor="let product of products">
+            <button class="cell-more-button">
+            </button>
+            <div class="product-cell image">
+                <img src="{{product.image}}" alt="product">
+            </div>
+            <div class="product-cell category"><span class="cell-label">Name:</span>{{product.name}}</div>
+            <div class="product-cell price"><span class="cell-label">Price:</span>${{product.price}}</div>
+            <div class="product-cell stock">
+                <button (click)="onDelete(product.id)" class="btn btn-warning mx-2"><i class="fa fa-trash"
+                        aria-hidden="true"></i></button>
+                <button class="btn btn-danger"><i class="fa fa-cog" aria-hidden="true"></i></button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

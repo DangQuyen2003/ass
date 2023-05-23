@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{FormControl,FormGroup} from "@angular/forms"
 import { Products } from 'src/app/common/product';
 import { ProductService } from 'src/app/services/products.service';
 
@@ -9,6 +10,10 @@ import { ProductService } from 'src/app/services/products.service';
 })
 export class HomeAdminComponent {
   products: Array<Products> = [];
+  searchForm: FormGroup = new FormGroup({
+    name: new FormControl(),
+    price: new FormControl()
+  });
   constructor(private proSrv: ProductService) { }
 
   ngOnInit(): void {
@@ -30,5 +35,11 @@ export class HomeAdminComponent {
 
   onEdit(product: any ){
 
+  }
+  onSearch(){
+    // alert(this.searchForm.value.name)
+    this.proSrv.getProducts(this.searchForm.value.name,this.searchForm.value.price).subscribe(data => {
+      this.products = data;
+    })
   }
 }

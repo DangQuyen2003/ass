@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Products } from 'src/app/common/product';
 import { ProductService } from 'src/app/services/products.service';
 
@@ -9,6 +10,7 @@ import { ProductService } from 'src/app/services/products.service';
 })
 export class LayoutAdminComponent implements OnInit {
   products: Array<Products> = [];
+  
   constructor(private proSrv: ProductService) { }
 
   ngOnInit(): void {
@@ -31,4 +33,5 @@ export class LayoutAdminComponent implements OnInit {
   onEdit(product: any ){
 
   }
+  
 }

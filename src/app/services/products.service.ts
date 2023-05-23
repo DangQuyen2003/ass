@@ -12,8 +12,15 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<Array<Products>> {
-    return this.http.get<Array<Products>>( _api + 'products');
+  getProducts(search_key:any =null,search_price:any =null): Observable<Array<Products>> {
+    let url = _api+ "products"
+    if(search_key !=null){
+      url += "?name_like="+ search_key
+    }
+    if(search_price !=null){
+      url += "?price_like="+ search_price
+    }
+    return this.http.get<Array<Products>>( url);
   }
 
   getDetail(id: string): Observable<Array<Products>> {
@@ -22,6 +29,7 @@ export class ProductService {
 
   Create(data: any): Observable<Array<Products>> {
     return this.http.post<Array<Products>>( _api + 'products', data);
+    
   }
 
   Update(id: string, data: any): Observable<Array<Products>> {
