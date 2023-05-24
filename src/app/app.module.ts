@@ -23,6 +23,7 @@ import { EditProductsComponent } from './admin/edit-products/edit-products.compo
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { AddProductsComponent } from './admin/add-products/add-products.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 
 
@@ -52,6 +53,7 @@ import { AddProductsComponent } from './admin/add-products/add-products.componen
     EditProductsComponent,
     NotfoundComponent,
     AddProductsComponent,
+    CartComponent,
 
   ],
   imports: [
