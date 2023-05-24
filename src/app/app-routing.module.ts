@@ -15,6 +15,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { AddProductsComponent } from './admin/add-products/add-products.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 
 
@@ -39,6 +40,10 @@ const routes: Routes = [
       {
         path: "watch",
         component: WatchComponent
+      },
+      {
+        path: "cart",
+        component: CartComponent
       },
       {
         path: "about",
