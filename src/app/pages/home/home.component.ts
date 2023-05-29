@@ -14,6 +14,9 @@ import { ProductService } from 'src/app/services/products.service';
 export class HomeComponent implements OnInit {
 
   products: Array<Products> = new Array<Products>();
+  products1: Array<Products> = new Array<Products>();
+  products2: Array<Products> = new Array<Products>();
+  products4: Array<Products> = new Array<Products>();
   banners: Array<Banner> = new Array<Banner>();
 
   customOptions: OwlOptions = {
@@ -47,6 +50,16 @@ export class HomeComponent implements OnInit {
     this.product.getProducts().subscribe(res => {
       this.products = res;
     })
+    this.product.getProducts2(2).subscribe(res => {
+      this.products2 = res;
+    })
+    this.product.getProducts1(1).subscribe(res => {
+      this.products1 = res;
+    })
+    this.product.getProducts4(4).subscribe(res => {
+      this.products4 = res;
+    })
+   
     this.banner.getBanners().subscribe(res => {
       this.banners = res;
     })

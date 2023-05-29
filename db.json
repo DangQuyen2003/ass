@@ -31,8 +31,8 @@
   ],
   "products": [
     {
-      "name": "Đồng hồ 1",
-      "price": "121212",
+      "name": "Đồng hồ 80000",
+      "price": "50",
       "image": "./assets/images/about-img.png",
       "id": "1"
     },
@@ -77,6 +77,77 @@
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
       "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
       "id": "8"
+    },
+    {
+      "name": "Đồng hồ 9",
+      "price": "800",
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "9"
+    }
+  ],
+
+
+
+  "products1": [
+    {
+      "name": "Đồng hồ 9",
+      "price": "800",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvp0Av36-84C-5eqsfeYkvXii-c0RgaHbSHA&usqp=CAU",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "1"
+    }
+  ],
+
+
+
+  "products2": [
+    {
+      "name": "Đồng hồ 5",
+      "price": "500",
+      "image": "https://m.media-amazon.com/images/I/515BNisImJL.jpg",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "1"
+    },
+    {
+      "name": "Đồng hồ 8",
+      "price": "800",
+      "image": "https://cdn.shopify.com/s/files/1/0997/6284/products/Side04_grande.png?v=1655378358",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "2"
+    }
+  ],
+
+
+
+  "products4": [
+    {
+      "name": "Đồng hồ 4",
+      "price": "400",
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
+      "id": "4",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
+    },
+    {
+      "name": "Đồng hồ 6",
+      "price": "600",
+      "image": "https://reviewed.vn/wp-content/uploads/2023/02/Smartwatch-cho-nu-1.jpg",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "6"
+    },
+    {
+      "name": "Đồng hồ 8",
+      "price": "800",
+      "image": "https://www.digitaltrends.com/wp-content/uploads/2022/11/Amazfit-Bip-3-Urban-Edition-smart-watch-product-display-on-white-background.jpg?fit=720%2C540&p=1",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "8"
+    },
+    {
+      "id": "2",
+      "name": "Đồng hồ 2",
+      "price": 200,
+      "image": "assets/images/w5.png",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
     }
   ],
   "category": [

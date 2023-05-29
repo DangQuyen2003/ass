@@ -1,6 +1,6 @@
 <section class="slider_section ">
   <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" >
+    <div class="carousel-inner">
       <div class="carousel-item " [ngClass]="key == 0 ? 'active' : ' '" *ngFor="let banner of banners; let key=index">
         <div class="container-fluid ">
           <div class="row">
@@ -48,7 +48,59 @@
       </h2>
     </div>
     <div class="row">
-      <div class="col-sm-6 col-xl-3" *ngFor="let product of products">
+      <div class="col-md-6 " *ngFor="let product of products1">
+        <div class="box">
+          <a routerLink="detail/{{product.id}}">
+            <div class="img-box">
+              <img src="{{product.image}}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                {{product.name}}
+              </h6>
+              <h6>
+                Price:
+                <span>
+                ${{product.price}}
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                Featured
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3" *ngFor="let product of products2">
+        <div class="box">
+          <a routerLink="detail/{{product.id}}">
+            <div class="img-box">
+              <img src="{{product.image}}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                {{product.name}}
+              </h6>
+              <h6>
+                Price:
+                <span>
+                ${{product.price}}
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+
+      <div class="col-sm-6 col-xl-3" *ngFor="let product of products4">
         <div class="box">
           <a routerLink="detail/{{product.id}}">
             <div class="img-box">
@@ -98,7 +150,7 @@
         <div class="detail-box">
           <div class="heading_container">
             <h2>
-              About Us 
+              About Us
             </h2>
           </div>
           <p>
