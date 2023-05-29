@@ -48,6 +48,13 @@
       "password": "123456789",
       "repPassword": "123456789",
       "id": 7
+    },
+    {
+      "name": "Nguyễn Minh Quý",
+      "email": "quynmph22591@fpt.edu.vn",
+      "password": "123",
+      "repPassword": "123",
+      "id": 8
     }
   ],
   "banners": [
@@ -87,13 +94,31 @@
       "name": "Đồng hồ 4",
       "price": "400",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
-      "id": 5
+      "id": 4
     },
     {
       "name": "Đồng hồ 5",
       "price": "500",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
+      "id": 5
+    },
+    {
+      "name": "Đồng hồ 6",
+      "price": "600",
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
       "id": 6
+    },
+    {
+      "name": "Đồng hồ 8",
+      "price": "800",
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
+      "id": 8
+    },
+    {
+      "name": "aaaaaaa",
+      "price": "900",
+      "image": null,
+      "id": 9
     }
   ],
   "category": [
