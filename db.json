@@ -73,19 +73,19 @@
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Đồng hồ 1",
       "price": 100,
-      "image": "assets/images/w4.png"
+      "image": "./assets/images/about-img.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Đồng hồ 2",
       "price": 200,
       "image": "assets/images/w5.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Đồng hồ 3",
       "price": 500,
       "image": "assets/images/w2.png"

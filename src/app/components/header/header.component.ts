@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Products } from 'src/app/common/product';
+import { ProductService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +10,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  products: Array<Products> = [];
   menuType: String = 'default';
   sellerName: String = '';
-  constructor(private router: Router) {}
+  searchForm: FormGroup = new FormGroup({
+    name: new FormControl(),
+  });
+ 
+  constructor(private router: Router,private proSrv: ProductService) {}
 
   ngOnInit(): void {
     this.router.events.subscribe((val: any) => {
@@ -31,10 +39,19 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
+    this.proSrv.getProducts().subscribe(data => {
+      this.products = data;
+    })
   }
 
   LogOut() {
     localStorage.removeItem('seller');
     this.router.navigate(['/']);
+  }
+  onSearch(){
+    // alert(this.searchForm.value.name)
+    this.proSrv.getProducts(this.searchForm.value.name).subscribe(data => {
+      this.products = data;
+    })
   }
 }
