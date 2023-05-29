@@ -5,129 +5,87 @@
       "email": "quyen1@gmail.com",
       "password": "123456",
       "repPassword": "123456",
-      "id": 1
-    },
-    {
-      "name": "quyen2",
-      "email": "quyen2@gmail.com",
-      "password": "1234",
-      "repPassword": "1234",
-      "id": 2
-    },
-    {
-      "name": "quyen3",
-      "email": "quyen3@gmail.com",
-      "password": "123",
-      "repPassword": "123",
-      "id": 3
-    },
-    {
-      "name": "Quang Hau",
-      "email": "quanghau457@gmail.com",
-      "password": "123456",
-      "repPassword": "123456",
-      "id": 4
-    },
-    {
-      "name": "Quang Hau",
-      "email": "quanghau457@gmail.com",
-      "password": "123456",
-      "repPassword": "123456",
-      "id": 5
-    },
-    {
-      "name": "quyen",
-      "email": "hau@gmail.com",
-      "password": "123456",
-      "repPassword": "123456",
-      "id": 6
-    },
-    {
-      "name": "cam",
-      "email": "hung@gmail.com",
-      "password": "123456789",
-      "repPassword": "123456789",
-      "id": 7
+      "id": "1"
     },
     {
       "name": "Nguyễn Minh Quý",
       "email": "quynmph22591@fpt.edu.vn",
       "password": "123",
       "repPassword": "123",
-      "id": 8
+      "id": "2"
     }
   ],
   "banners": [
     {
-      "id": 1,
+      "id": "1",
       "link": "assets/images/slider-img.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "link": "assets/images/slider-img.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "link": "assets/images/slider-img.png"
     }
   ],
   "products": [
     {
-      "id": "1",
       "name": "Đồng hồ 1",
-      "price": 100,
-      "image": "./assets/images/about-img.png"
+      "price": "121212",
+      "image": "./assets/images/about-img.png",
+      "id": "1"
     },
     {
       "id": "2",
       "name": "Đồng hồ 2",
       "price": 200,
-      "image": "assets/images/w5.png"
+      "image": "assets/images/w5.png",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
     },
     {
       "id": "3",
       "name": "Đồng hồ 3",
       "price": 500,
-      "image": "assets/images/w2.png"
+      "image": "assets/images/w2.png",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
     },
     {
       "name": "Đồng hồ 4",
       "price": "400",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
-      "id": 4
+      "id": "4",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
     },
     {
       "name": "Đồng hồ 5",
       "price": "500",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "id": 5
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "5"
     },
     {
       "name": "Đồng hồ 6",
       "price": "600",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "id": 6
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "6"
     },
     {
       "name": "Đồng hồ 8",
       "price": "800",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "id": 8
-    },
-    {
-      "name": "aaaaaaa",
-      "price": "900",
-      "image": null,
-      "id": 9
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "8"
     }
   ],
   "category": [
     {
       "name": "Đồng hồ nam",
-      "id": 1
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Đồng hồ nữ"
     }
   ]

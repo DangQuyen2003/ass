@@ -24,14 +24,12 @@ export class DetailComponent implements OnInit {
   constructor(private proSrv: ProductService,private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
-   const id = this._route.snapshot.params;
-    // console.log({...id});
+   const id = this._route.snapshot.params['id'];
+    console.log(id);
     
     // const { id } = params
     // console.log(id);
-    const pra = this.id
-    console.log(pra);
-    this.proSrv.getDetail(this.id).subscribe(data => {
+    this.proSrv.getDetail(id).subscribe(data => {
         
       this.products = data;
     })

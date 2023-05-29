@@ -16,6 +16,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { AddProductsComponent } from './admin/add-products/add-products.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { EditProductsComponent } from './admin/edit-products/edit-products.component';
 
 
 
@@ -73,6 +74,10 @@ const routes: Routes = [
       {
         path: "add",
         component: AddProductsComponent
+      }, 
+      {
+        path: "edit/:id",
+        component: EditProductsComponent
       }
     ]
   },

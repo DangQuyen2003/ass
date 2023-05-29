@@ -1,39 +1,35 @@
-<section class="about_section layout_padding">
-    <div class="container"  >
-        <div class="row">
-            <div class="col-md-6 col-lg-5 ">
-                <div class="img-box">
-                    <img src="./assets/images/about-img.png" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-7">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                         {{products.name}}
-                        </h2>
-                    </div>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration
-                        in some form, by injected humour, or randomised words which don't look even slightly believable.
-                        If you
-                        are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                        hidden in
-                        the middle of text. All
-                    </p>
-                    <form action="" class="form-inline" method="post" >
-                        <div class="form-group">
-                            <label for="sr-only" for="" >Số lượng</label><br>
-                            <input type="number" class="form-control" min="1"placeholder="Số lượng" id="">
-                        </div><br>
-                        <button type="submit" class="btn btn-primary">
-                            SEND
-                          </button>
-                    </form>
-                </div>
-            </div>
+<div class = "card-wrapper">
+    <div class = "card">
+      <!-- card left -->
+      <div class = "product-imgs">
+        <div class = "img-display">
+          <div class = "img-showcase">
+            <img src = "{{products.image}}" alt = "shoe image" width="200px">
+          </div>
         </div>
+      </div>
+      <!-- card right -->
+      <div class = "product-content">
+        <h2 class = "product-title">{{products.name}}</h2>
+       
+       
+  
+        <div class = "product-price">
+          <!-- <p class = "last-price">Old Price: <span>$257.00</span></p> -->
+          <p class = "new-price">New Price: <span>${{products.price}}</span></p>
+        </div>
+  
+        <div class = "product-detail">
+          <h2>Mô tả chi tiết: </h2>
+          <p>{{products.description}}</p>
+        </div>
+  
+        <div class = "purchase-info">
+          <input type = "number" min = "1" value = "1" max="10">
+          <button type = "button" class = "btn">
+            Add to Cart  
+          </button>
+        </div>
+      </div>
     </div>
-</section>
+  </div>
