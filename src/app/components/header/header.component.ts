@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']);
   }
   onSearch(){
-    alert(this.searchForm.value.name)
+    // alert(this.searchForm.value.name)
     this.proSrv.getProducts(this.searchForm.value.name).subscribe(data => {
       this.products = data;
     })

@@ -66,19 +66,19 @@
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Đồng hồ 1",
       "price": 100,
       "image": "./assets/images/about-img.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Đồng hồ 2",
       "price": 200,
       "image": "assets/images/w5.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Đồng hồ 3",
       "price": 500,
       "image": "assets/images/w2.png"
@@ -87,25 +87,25 @@
       "name": "Đồng hồ 4",
       "price": "400",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
-      "id": 5
+      "id": "5"
     },
     {
       "name": "Đồng hồ 5",
       "price": "500",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "id": 6
+      "id":" 6"
     },
     {
       "name": "Đồng hồ 5",
       "price": "500",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "id": 7
+      "id": "7"
     },
     {
       "name": "Đồng hồ 5",
       "price": "500",
       "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "id": 8
+      "id": "8"
     }
   ],
   "category": [

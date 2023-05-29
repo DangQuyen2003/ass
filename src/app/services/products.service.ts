@@ -21,8 +21,8 @@ export class ProductService {
     return this.http.get<Array<Products>>( url);
   }
 
-  getDetail(id: string): Observable<Array<Products>> {
-    return this.http.get<Array<Products>>( _api + 'products/' + id);
+  getDetail(id: string): Observable<Products> {
+    return this.http.get<Products>( _api + 'products/' + id);
   }
 
   Create(data: any): Observable<Array<Products>> {
