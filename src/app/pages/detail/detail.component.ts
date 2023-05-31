@@ -56,6 +56,7 @@ export class DetailComponent implements OnInit {
   AddToCart(){
     if(this.products){
       this.products.quantity = this.productQuantity
+      this.proSrv.localAddToCart(this.products)
       if (!localStorage.getItem('seller')) {
         // console.warn(this.products);
         this.proSrv.localAddToCart(this.products)
