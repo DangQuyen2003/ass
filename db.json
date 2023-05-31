@@ -40,8 +40,9 @@
   "products": [
     {
       "name": "Đồng hồ 80000",
-      "price": "50",
+      "price": 455,
       "image": "./assets/images/about-img.png",
+      "description": "",
       "id": "1"
     },
     {
@@ -94,7 +95,6 @@
       "id": "9"
     }
   ],
-
   "category": [
     {
       "name": "Đồng hồ nam",
