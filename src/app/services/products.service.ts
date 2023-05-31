@@ -21,7 +21,14 @@ export class ProductService {
     return this.http.get<Array<Products>>(url);
   }
 
-
+  getProducts8(search_key:any =null,): Observable<Array<Products>> {
+    let url = _api+ "products/?_limit=8"
+    if(search_key !=null){
+      url += "?name_like=" +search_key
+    }
+    return this.http.get<Array<Products>>(url);
+  }
+  
 
 
   getDetail(id: string): Observable<Products> {
