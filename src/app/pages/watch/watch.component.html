@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-sm-6 col-xl-3" *ngFor="let product of products">
           <div class="box">
-            <a href="">
+            <a routerLink="/detail/{{product.id}}">
               <div class="img-box">
                 <img src="{{product.image}}" alt="">
               </div>
