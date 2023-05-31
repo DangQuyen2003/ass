@@ -132,7 +132,16 @@ img{
 .purchase-info{
     margin: 1.5rem 0;
 }
-.purchase-info input,
+.purchase-info input{
+    border: 1.5px solid #ddd;
+    // border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    // padding: 0.45rem 0.8rem;
+    outline: 0;
+    // margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
 .purchase-info .btn{
     border: 1.5px solid #ddd;
     border-radius: 25px;
@@ -142,8 +151,9 @@ img{
     margin-right: 0.2rem;
     margin-bottom: 1rem;
 }
-.purchase-info input{
-    width: 60px;
+.handle button{
+  width: 30px;
+  // padding: 6px;
 }
 .purchase-info .btn{
     cursor: pointer;

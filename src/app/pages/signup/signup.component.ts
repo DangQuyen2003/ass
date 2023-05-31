@@ -11,10 +11,10 @@ import { SellerService } from 'src/app/services/seller.service';
 export class SignupComponent implements OnInit {
 
   constructor(private seller: SellerService, private router: Router) { }
-  
+
   authError: string = ''
   ngOnInit(): void {
-
+    this.seller.sellerAuthReload()
   }
 
   signUp(data: SignUp): void {
@@ -24,12 +24,12 @@ export class SignupComponent implements OnInit {
 
 
 
-  
 
 
- 
 
-  
+
+
+
   openSignUp() {
     // this.showSign = false
   }

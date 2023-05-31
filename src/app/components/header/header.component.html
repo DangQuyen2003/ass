@@ -28,19 +28,37 @@
             <a class="nav-link" routerLink="contact">Contact Us</a>
           </li>
         </ul>
-        <div class="user_option-box">
-          <a routerLink="signup">
-            <i class="fa fa-user" aria-hidden="true"></i>
-          </a>
-          <a (click)="LogOut()">
-            <i class="fa fa-sign-out" aria-hidden="true"></i>
-          </a>
-          <a routerLink="cart">
-            <i class="fa fa-cart-plus" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </a>
+        <div class="user_option-box" [ngSwitch]="menuType">
+          <div class="" *ngSwitchCase="'default'">
+            <a routerLink="signin">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <!-- <a (click)="LogOut()">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </a> -->
+            <a routerLink="cart">
+              <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="" *ngSwitchCase="'seller'">
+            <!-- <a routerLink="signup">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a> -->
+
+            <span>{{sellerName}}</span>
+            <a (click)="LogOut()" class="logout">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </a>
+            <a routerLink="cart">
+              <i class="fa fa-cart-plus" aria-hidden="true">({{cartItems}})</i>
+            </a>
+            <a href="">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
     </nav>

@@ -11,7 +11,7 @@ import { SellerService } from 'src/app/services/seller.service';
 export class SigninComponent implements OnInit{
 
   constructor(private seller: SellerService, private router: Router) { }
-  showSignIn = false
+  // showSignIn = false
   authError: string = ''
   ngOnInit(): void {
 
@@ -23,19 +23,19 @@ export class SigninComponent implements OnInit{
   signIn(data: SignIn): void {
     this.authError = '';
     this.seller.userSignIn(data);
-    this.seller.isSignInError.subscribe((isError) => {
+    this.seller.invalidSellerAuth.subscribe((isError) => {
       if (isError) {
-        this.authError = "Email hoặc mật khẩu không chính xác"
+        this.authError = "Email không tồn tại"
       }
     })
   }
 
 
-  openSignIn() {
-    this.showSignIn = true
-  }
+  // openSignIn() {
+  //   this.showSignIn = true
+  // }
 
-  
+
 
 
 }

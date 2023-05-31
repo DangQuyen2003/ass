@@ -11,17 +11,18 @@ import { observeOn } from 'rxjs';
 export class SellerService {
 
   isSignInError = new EventEmitter<boolean>(false)
+  invalidSellerAuth= new EventEmitter<boolean>(false)
 
 
   constructor(private http:HttpClient, private router: Router) { }
 
-  userSignUp(data:SignUp){
-    return this.http.post('http://localhost:3000/seller',
-    data,
+  userSignUp(seller:SignUp){
+    this.http.post('http://localhost:3000/seller',
+    seller,
     {observe: 'response'}).subscribe((result) => {
       // console.warn(result);
       if (result) {
-        localStorage.setItem('seller', JSON.stringify(result));
+        localStorage.setItem('seller', JSON.stringify(result.body));
         this.router.navigate(['signin'])
       }
 
@@ -30,18 +31,25 @@ export class SellerService {
   }
 
   userSignIn(data:SignIn){
-    // console.warn(data);
-    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
-    {observe:'response'}).subscribe((result:any) => {
-      // console.warn(result);
-      if (result && result.body && result.body.length) {
-        // console.warn("dung tk");
-        localStorage.setItem('seller', JSON.stringify(result));
+
+    this.http.get<SignUp[]>(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
+    {observe:'response'}).subscribe((result) => {
+
+      if (result && result.body?.length) {
+
+        localStorage.setItem('seller', JSON.stringify(result.body[0]));
         this.router.navigate(['/'])
+        this.invalidSellerAuth.emit(false);
       }else{
-        // console.warn("sai tk");
-        this.isSignInError.emit(true)
+
+        this.invalidSellerAuth.emit(true);
       }
     })
+  }
+
+  sellerAuthReload() {
+    if (localStorage.getItem("seller")) {
+      this.router.navigate(["/"])
+    }
   }
 }

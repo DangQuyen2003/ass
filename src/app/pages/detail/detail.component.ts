@@ -11,27 +11,56 @@ import { ProductService } from 'src/app/services/products.service';
   styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements OnInit {
+  productQuantity:number=1;
+
   products:Products = new Products;
 
   // products: Array<Products> = [];
   id: string = '';
   productDetail: FormGroup = new FormGroup({
-    
+
     quantity: new FormControl(),
-   
+
   });
 
-  constructor(private proSrv: ProductService,private _route: ActivatedRoute) { }
+  constructor(private proSrv: ProductService,private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-   const id = this._route.snapshot.params['id'];
-    console.log(id);
-    
+   const id = this.activatedRoute.snapshot.params['id'];
+    console.warn(id);
+
+
     // const { id } = params
     // console.log(id);
     this.proSrv.getDetail(id).subscribe(data => {
-        
+
       this.products = data;
+
+
+      let cartData = localStorage.getItem('localCart');
+      if (id && cartData) {
+
+      }
     })
+
+  }
+
+  handleQuantity(val:string){
+    if(this.productQuantity<20 && val==='max'){
+      this.productQuantity+=1;
+    }else if(this.productQuantity>1 && val==='min'){
+      this.productQuantity-=1;
+    }
+  }
+
+  AddToCart(){
+    if(this.products){
+      this.products.quantity = this.productQuantity
+      if (!localStorage.getItem('seller')) {
+        // console.warn(this.products);
+        this.proSrv.localAddToCart(this.products)
+      }
+
+    }
   }
 }
