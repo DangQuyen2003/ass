@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { cart } from 'src/app/common/cart';
 import { Products } from 'src/app/common/product';
 
 import { ProductService } from 'src/app/services/products.service';
@@ -11,7 +12,12 @@ import { ProductService } from 'src/app/services/products.service';
   styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements OnInit {
+
+
   productQuantity:number=1;
+  removecart=false; 
+  
+  
 
   products:Products = new Products;
 
@@ -27,11 +33,6 @@ export class DetailComponent implements OnInit {
 
   ngOnInit(): void {
    const id = this.activatedRoute.snapshot.params['id'];
-    console.warn(id);
-
-
-    // const { id } = params
-    // console.log(id);
     this.proSrv.getDetail(id).subscribe(data => {
 
       this.products = data;
@@ -39,7 +40,14 @@ export class DetailComponent implements OnInit {
 
       let cartData = localStorage.getItem('localCart');
       if (id && cartData) {
-
+        let items = JSON.parse(cartData);
+        items = items.filter((item : Products) => id === item.id.toString());
+        if(items.length){
+          this.removecart=true;
+        }
+        else{
+           this.removecart=false;
+      }
       }
     })
 
@@ -53,15 +61,36 @@ export class DetailComponent implements OnInit {
     }
   }
 
+  
   AddToCart(){
     if(this.products){
       this.products.quantity = this.productQuantity
       this.proSrv.localAddToCart(this.products)
       if (!localStorage.getItem('seller')) {
-        // console.warn(this.products);
         this.proSrv.localAddToCart(this.products)
+        this.removecart=true; 
+      }else{
+        console.warn("user í logged in");
+        let user = localStorage.getItem('seller');
+        let userId = user && JSON.parse(user).id;
+        console.warn(userId);
+        let cartData: cart  = {
+          ...this.products,
+          userId,
+          productId:this.products.id,
+        }
+        delete cartData.id;
+        console.warn(cartData);
       }
 
     }
   }
+
+  RemoveCart(id : string ){
+      this.proSrv.removeItemFromCart(id);
+      this.removecart=false;
+
+  }
+
+
 }
