@@ -29,6 +29,7 @@ import { ListUserComponent } from './admin/pages-admin/list-user/list-user.compo
 import { InfoAdminComponent } from './admin/pages-admin/info-admin/info-admin.component';
 import { ListProductsComponent } from './admin/pages-admin/list-products/list-products.component';
 import { DashboardComponent } from './admin/pages-admin/dashboard/dashboard.component';
+import { SearchPipe } from './search.pipe';
 
 
 
@@ -63,6 +64,7 @@ import { DashboardComponent } from './admin/pages-admin/dashboard/dashboard.comp
     InfoAdminComponent,
     ListProductsComponent,
     DashboardComponent,
+    SearchPipe,
 
   ],
   imports: [

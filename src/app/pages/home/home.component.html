@@ -48,7 +48,8 @@
       </h2>
     </div>
     <div class="row">
-      <div class="col-sm-6 col-xl-3" *ngFor="let product of products4">
+      <input type="text" placeholder="Search to name" [(ngModel)]="searchText" class="form-control">
+      <div class="col-sm-6 col-xl-3" *ngFor="let product of products4 | search:searchText">
         <div class="box">
           <a routerLink="detail/{{product.id}}">
             <div class="img-box">

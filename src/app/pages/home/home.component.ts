@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   products2: Array<Products> = new Array<Products>();
   products4: Array<Products> = new Array<Products>();
   banners: Array<Banner> = new Array<Banner>();
-
+  searchText=""
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
