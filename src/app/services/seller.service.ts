@@ -2,14 +2,14 @@ import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http"
 import { SignIn, SignUp } from '../common/auth';
 import {  Router } from '@angular/router';
-import { observeOn } from 'rxjs';
+import { BehaviorSubject, observeOn } from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class SellerService {
-
+  isSellerLoggedIn= new BehaviorSubject<boolean>(false);
   isSignInError = new EventEmitter<boolean>(false)
   invalidSellerAuth= new EventEmitter<boolean>(false)
 
@@ -30,21 +30,26 @@ export class SellerService {
 
   }
 
-  userSignIn(data:SignIn){
-
-    this.http.get<SignUp[]>(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
-    {observe:'response'}).subscribe((result) => {
-
-      if (result && result.body?.length) {
-
-        localStorage.setItem('seller', JSON.stringify(result.body[0]));
-        this.router.navigate(['/'])
-        this.invalidSellerAuth.emit(false);
-      }else{
-
-        this.invalidSellerAuth.emit(true);
-      }
-    })
+  userSignIn(data: SignIn) {
+    this.http
+      .get<SignUp[]>(
+        `http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
+        { observe: 'response' }
+      )
+      .subscribe((result: any) => {
+        // console.log(result.body[0]['role'] == 'admin');
+        if (result && result.body?.length && result.body[0]['role'] == 'admin' ) {
+          localStorage.setItem('admin', JSON.stringify(result.body[0]));
+          this.router.navigate(['admin/']);
+          this.invalidSellerAuth.emit(false);
+        } else if (result && result.body?.length) {
+          localStorage.setItem('seller', JSON.stringify(result.body[0]));
+          this.router.navigate(['/']);
+          this.invalidSellerAuth.emit(false);
+        } else {
+          this.invalidSellerAuth.emit(true);
+        }
+      });
   }
 
   sellerAuthReload() {

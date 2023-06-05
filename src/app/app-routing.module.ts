@@ -20,6 +20,7 @@ import { EditProductsComponent } from './admin/pages-admin/edit-products/edit-pr
 import { ListUserComponent } from './admin/pages-admin/list-user/list-user.component';
 import { InfoAdminComponent } from './admin/pages-admin/info-admin/info-admin.component';
 import { DashboardComponent } from './admin/pages-admin/dashboard/dashboard.component';
+import { AuthGuard } from './auth.guard';
 
 
 
@@ -60,8 +61,8 @@ const routes: Routes = [
       {
         path: 'detail/:id',
         component: DetailComponent
-      }, 
-      
+      },
+
 
     ]
   },
@@ -69,6 +70,7 @@ const routes: Routes = [
   {
     path: "admin",
     component: LayoutAdminComponent,
+    canActivate:[AuthGuard],
     children: [
       {
         path: "",
@@ -81,15 +83,15 @@ const routes: Routes = [
       {
         path: "user",
         component: ListUserComponent,
-      }, 
+      },
       {
         path: "info",
         component: InfoAdminComponent,
-      },  
+      },
       {
         path: "add",
         component: AddProductsComponent
-      }, 
+      },
       {
         path: "edit/:id",
         component: EditProductsComponent

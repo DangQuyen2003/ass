@@ -8,11 +8,11 @@
       "id": "1"
     },
     {
-      "name": "Nguyễn Minh Quý",
-      "email": "quynmph22591@fpt.edu.vn",
-      "password": "123",
+      "name": "ADMIN",
+      "email": "admin123@gmail.com",
+      "password": "admin123",
       "role": "admin",
-      "repPassword": "123",
+      "repPassword": "admin123",
       "id": "2"
     },
     {
@@ -97,7 +97,7 @@
   ],
   "cart": [
 
-    
+
   ],
   "category": [
     {

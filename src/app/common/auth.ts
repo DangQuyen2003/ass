@@ -5,7 +5,8 @@ export interface SignUp{
   email: string;
   password: string;
   repPassword: string;
-  
+  role: string;
+
 }
 
 export interface SignIn{
