@@ -96,8 +96,46 @@
     }
   ],
   "cart": [
-
-
+    {
+      "name": "Đồng hồ 4",
+      "price": 400,
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "quantity": 1,
+      "userId": "1",
+      "productId": "4",
+      "id": 1
+    },
+    {
+      "name": "Đồng hồ của Quý",
+      "price": 1000,
+      "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/8/637982457565218496_apple-watch-ultra-49mm-alpine-loop-cam-dd.jpg",
+      "description": "Những cải tiến của Apple biến Apple Watch Series 8 GPS + Cellular thành một chuyên gia chăm sóc sức khỏe đích thực. Ngoài tính năng thống kê và dự đoán chu kỳ của phái nữ thông qua cảm biến mới, sản phẩm còn có thể đánh giá chất lượng giấc ngủ, đưa ra những cảnh báo về thể trạng và phát hiện tai nạn khẩn cấp.",
+      "quantity": 1,
+      "userId": "_7iRmHd",
+      "productId": "CIZy6P9",
+      "id": 2
+    },
+    {
+      "name": "Đồng hồ 2",
+      "price": 200,
+      "image": "assets/images/w5.png",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "quantity": 1,
+      "userId": "_7iRmHd",
+      "productId": "2",
+      "id": 3
+    },
+    {
+      "name": "Đồng hồ 4",
+      "price": "400",
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "quantity": 1,
+      "userId": "_7iRmHd",
+      "productId": "4",
+      "id": 4
+    }
   ],
   "category": [
     {

@@ -70,17 +70,22 @@ export class DetailComponent implements OnInit {
         this.proSrv.localAddToCart(this.products)
         this.removecart=true; 
       }else{
-        console.warn("user í logged in");
+       
         let user = localStorage.getItem('seller');
         let userId = user && JSON.parse(user).id;
-        console.warn(userId);
+        
         let cartData: cart  = {
           ...this.products,
           userId,
           productId:this.products.id,
         }
         delete cartData.id;
-        console.warn(cartData);
+      
+        this.proSrv.addToCart(cartData).subscribe((result)=>{
+            if(result){
+              alert("bạn đã thêm vào giỏ hàng thành công")
+            }
+        })
       }
 
     }

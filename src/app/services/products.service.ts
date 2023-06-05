@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Products } from '../common/product';
+import { Products, cart } from '../common/product';
 import { Router } from '@angular/router';
 
 const _api = 'http://localhost:3000/'
@@ -72,6 +72,8 @@ export class ProductService {
         this.cartData.emit(items);
       }
   }
-  
+  addToCart(cartData:cart){
+    return this.http.post<Array<Products>>('http://localhost:3000/cart', cartData);
+  }
 
 }
