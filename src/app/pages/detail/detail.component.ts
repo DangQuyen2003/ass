@@ -73,17 +73,19 @@ export class DetailComponent implements OnInit {
        
         let user = localStorage.getItem('seller');
         let userId = user && JSON.parse(user).id;
+        let userName = user && JSON.parse(user).name;
         
         let cartData: cart  = {
           ...this.products,
           userId,
-          productId:this.products.id,
+          productId: this.products.id,
+          userName,
         }
-        delete cartData.id;
+        // delete cartData.id;
       
         this.proSrv.addToCart(cartData).subscribe((result)=>{
             if(result){
-              alert("bạn đã thêm vào giỏ hàng thành công")
+              alert("Bạn đã thêm vào giỏ hàng thành công")
             }
         })
       }
@@ -91,11 +93,6 @@ export class DetailComponent implements OnInit {
     }
   }
 
-  RemoveCart(id : string ){
-      this.proSrv.removeItemFromCart(id);
-      this.removecart=false;
-
-  }
 
 
 }

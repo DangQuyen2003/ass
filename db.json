@@ -39,44 +39,44 @@
   ],
   "products": [
     {
-      "name": "Đồng hồ 2",
+      "name": "Apple Watch SE ",
       "price": 200,
-      "image": "assets/images/w5.png",
+      "image": "https://shopdunk.com/images/thumbs/0011823_silver_550.webp",
       "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
       "id": "2"
     },
     {
-      "id": "3",
-      "name": "Đồng hồ 3",
+      "name": "Apple Watch Series 8",
       "price": 500,
-      "image": "assets/images/w2.png",
-      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MKU83_VW_34FR+watch-41-alum-midnight-nc-8s_VW_34FR_WF_CO_GEO_VN?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1683226539556",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "3"
     },
     {
-      "name": "Đồng hồ 4",
+      "name": "Đồng hồ thông minh BeFit BeU B3",
       "price": "400",
-      "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
-      "id": "4",
-      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải."
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9YGIhwKoL6TYWV4cZq98z7jgqCIVmGxfv8JmQTUpX1T3_vD_5ObEtbQTa5ODuWixF8xG8nGhxDeXiv71U2esx2oVwVrDXF0jlV15t4gj10FglQT3adWEs77bVZV2fMknDXA&usqp=CAc",
+      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "4"
     },
     {
       "name": "Đồng hồ 5",
       "price": "500",
-      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
-      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ3JOoxznY2msr0YMyRBBUN8QsRr6-VhZFuhZBCDLlCalgoxR5UWbZ-XuQhcBctANMoRAsoU3lpVg2DhSy9suW0vLfB4lMpJUlyxkCjPDz8I5GV4GYhSrmQ5XCbmZDy0Dq-Qg&usqp=CAc",
+      "description": "Nhờ hàng loạt sự nâng cấp, cải tiến về công nghệ mà Apple Watch Series 8 GPS 41mm mang đến cho người dùng những trải nghiệm sâu sắc hơn. Cảm biến mới cho phép đồng hồ thống kê chu kỳ phái nữ hiệu quả hơn. Đồng thời, còn rất nhạy bén trong việc phát hiện tai nạn khẩn cấp và thống kê chất lượng giấc ngủ mỗi ngày. Sở hữu đồng hồ Apple Watch Series 8, bạn như có một chuyên gia sức khỏe lý tưởng đồng hành trong cuộc sống.",
       "id": "5"
     },
     {
       "name": "Đồng hồ 6",
       "price": "600",
-      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSk99uQ0xFrCl26X2jBdIitVkMKzX3RL2gOd4EsVEr6tN6-UpShUvRw3glTO-vYaZDB3_2xd3xhhkRvBdukuiUhmG_In7JmioptIXDP8xH69CkTTKoWSkugMDPf_OZzMhIe0_Yj&usqp=CAc",
       "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
       "id": "6"
     },
     {
       "name": "Đồng hồ 8",
       "price": "800",
-      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTWLhTAZbqdnM3WdfUjEsrdnA4-tuTMDUtk_L1O-Qngyt63XlnF7pPUvRe6SH7CJz-SuJQH9hZ8q41YlNRXwH1Le0amPBNsr4E0D2YRZghmg3bJH5fwcUapeDXLg6QJACcdoA&usqp=CAc",
       "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
       "id": "8"
     },
@@ -97,44 +97,26 @@
   ],
   "cart": [
     {
-      "name": "Đồng hồ 4",
-      "price": 400,
-      "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
+      "name": "Đồng hồ 8",
+      "price": "800",
+      "image": "https://cdn3.dhht.vn/wp-content/uploads/2017/07/AQ-S810W-1A4VDF-399x399.jpg",
       "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
-      "quantity": 1,
-      "userId": "1",
-      "productId": "4",
-      "id": 1
-    },
-    {
-      "name": "Đồng hồ của Quý",
-      "price": 1000,
-      "image": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/8/637982457565218496_apple-watch-ultra-49mm-alpine-loop-cam-dd.jpg",
-      "description": "Những cải tiến của Apple biến Apple Watch Series 8 GPS + Cellular thành một chuyên gia chăm sóc sức khỏe đích thực. Ngoài tính năng thống kê và dự đoán chu kỳ của phái nữ thông qua cảm biến mới, sản phẩm còn có thể đánh giá chất lượng giấc ngủ, đưa ra những cảnh báo về thể trạng và phát hiện tai nạn khẩn cấp.",
-      "quantity": 1,
+      "id": "8",
+      "quantity": 2,
       "userId": "_7iRmHd",
-      "productId": "CIZy6P9",
-      "id": 2
+      "productId": "8",
+      "userName": "quyen"
     },
     {
       "name": "Đồng hồ 2",
       "price": 200,
       "image": "assets/images/w5.png",
       "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
+      "id": "2",
       "quantity": 1,
       "userId": "_7iRmHd",
       "productId": "2",
-      "id": 3
-    },
-    {
-      "name": "Đồng hồ 4",
-      "price": "400",
-      "image": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/53_GA-2000-1A2DR-699x699.jpg",
-      "description": "Đồng hồ điện từ sử dụng các mắt cảm biến để đo lường các hạt điện tích âm và dương. Thay vì sử dụng cánh quạt để làm việc như các đồng hồ cơ từ. Điều này giúp cho thiết bị có thể dễ dàng lắp đặt cho các hệ thống dạng bùn, dạng sệt, nước thải.",
-      "quantity": 1,
-      "userId": "_7iRmHd",
-      "productId": "4",
-      "id": 4
+      "userName": "quyen"
     }
   ],
   "category": [

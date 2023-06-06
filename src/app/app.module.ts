@@ -30,6 +30,7 @@ import { InfoAdminComponent } from './admin/pages-admin/info-admin/info-admin.co
 import { ListProductsComponent } from './admin/pages-admin/list-products/list-products.component';
 import { DashboardComponent } from './admin/pages-admin/dashboard/dashboard.component';
 import { SearchPipe } from './search.pipe';
+import { ListCartComponent } from './admin/pages-admin/list-cart/list-cart.component';
 
 
 
@@ -65,6 +66,7 @@ import { SearchPipe } from './search.pipe';
     ListProductsComponent,
     DashboardComponent,
     SearchPipe,
+    ListCartComponent,
 
   ],
   imports: [

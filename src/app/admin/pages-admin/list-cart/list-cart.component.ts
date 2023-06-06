@@ -3,17 +3,17 @@ import { cart } from 'src/app/common/product';
 import { CartService } from 'src/app/services/cart.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.scss']
+  selector: 'app-list-cart',
+  templateUrl: './list-cart.component.html',
+  styleUrls: ['./list-cart.component.scss']
 })
-export class CartComponent {
+export class ListCartComponent {
   carts: cart[] | undefined;
 
   constructor(private cartSrv: CartService) { }
 
   ngOnInit(): void {
-    this.cartSrv.currentCart().subscribe((result) => {
+    this.cartSrv.listCart().subscribe((result) => {
       this.carts = result
     })
   }
@@ -21,7 +21,7 @@ export class CartComponent {
   onDelete(id: string) {
     if (confirm("Bạn có muốn xóa không")) {
       this.cartSrv.Delete(id).subscribe(data => {
-        this.cartSrv.currentCart().subscribe((result) => {
+        this.cartSrv.listCart().subscribe((result) => {
           this.carts = result
         })
       })

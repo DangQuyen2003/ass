@@ -17,6 +17,7 @@ export class WatchComponent {
       this.products = res;
     })
   }
+  searchText=''
     
 
 }

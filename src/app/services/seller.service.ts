@@ -1,8 +1,10 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http"
-import { SignIn, SignUp } from '../common/auth';
+import { ListUser, SignIn, SignUp } from '../common/auth';
 import {  Router } from '@angular/router';
 import { BehaviorSubject, observeOn } from 'rxjs';
+
+const _api = 'http://localhost:3000/'
 
 
 @Injectable({
@@ -56,5 +58,9 @@ export class SellerService {
     if (localStorage.getItem("seller")) {
       this.router.navigate(["/"])
     }
+  }
+
+  getUsers(){
+    return this.http.get<Array<ListUser>>(_api + 'seller');
   }
 }

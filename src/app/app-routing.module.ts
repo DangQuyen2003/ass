@@ -21,6 +21,7 @@ import { ListUserComponent } from './admin/pages-admin/list-user/list-user.compo
 import { InfoAdminComponent } from './admin/pages-admin/info-admin/info-admin.component';
 import { DashboardComponent } from './admin/pages-admin/dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
+import { ListCartComponent } from './admin/pages-admin/list-cart/list-cart.component';
 
 
 
@@ -87,6 +88,10 @@ const routes: Routes = [
       {
         path: "info",
         component: InfoAdminComponent,
+      },
+      {
+        path: "listCart",
+        component: ListCartComponent,
       },
       {
         path: "add",

@@ -16,3 +16,8 @@ export interface SignIn{
   role: string;
 
 }
+
+export interface ListUser {
+  name: string;
+  email: string;
+}
