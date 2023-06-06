@@ -28,10 +28,10 @@ export class EditProductsComponent implements OnInit{
    
    this.prodSrv.getDetail(id).subscribe(data => {
     this.productFormEdit = new FormGroup({
-      name: new FormControl(data.name),
-      price: new FormControl(data.price),
-      image: new FormControl(data.image),
-      description:new FormControl(data.description)
+      name: new FormControl(data.name,Validators.required),
+      price: new FormControl(data.price,Validators.required),
+      image: new FormControl(data.image,Validators.required),
+      description:new FormControl(data.description,[Validators.required, Validators.minLength(10)])
     });
     
    });
